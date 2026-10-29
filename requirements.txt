@@ -1,0 +1,16 @@
+# Dependencies for dataset building, training, ONNX export and offline evaluation.
+# Pinned versions are the ones the project was developed and measured with (Python 3.11).
+numpy==1.26.4
+pandas==2.3.3
+h5py==3.15.1
+joblib==1.5.2
+scikit-learn==1.5.2
+tensorflow==2.15.0
+onnxruntime==1.26.0
+
+# Versions below were not recorded during development; pin them after a fresh install.
+imbalanced-learn   # SMOTE in train_multiclass_models.py
+skl2onnx           # analysis/convert_multiclass_committee_to_onnx.py
+pytest             # tests/
+
+# External tool (not a pip package): tshark from Wireshark, used to read pcaps.

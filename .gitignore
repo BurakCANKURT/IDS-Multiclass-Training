@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Data, models and outputs are never committed (CICIDS-2017 is downloaded separately,
+# trained models are published as GitHub Release assets)
+data/
+results/
+saved_models/
+multiclass_training/data/
+multiclass_training/models/
+analysis/killgates/out/
+*.pcap
+*.pcapng
+*.csv
+*.joblib
+*.keras
+*.onnx
+*.npz
+*.h5
+
+# Local secrets and editor state
+secrets.h
+.env
+.vscode/
+.vs/
+.idea/
+.claude/
+nul
