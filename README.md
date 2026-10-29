@@ -2,8 +2,8 @@
 
 Training, evaluation and generalization experiments for a multiclass network intrusion
 detector trained on [CICIDS-2017](https://www.unb.ca/cic/datasets/ids-2017.html).
-This repository produces the models used by the live detection console
-(**`<live-console repo link>`**).
+This repository produces the models used by the live detection console,
+[**Live IDS Console**](https://github.com/BurakCANKURT/Live-IDS-Console).
 
 This project started as my bachelor's thesis. The goal was to train models on CICIDS-2017
 and then maximize how well they detect attacks in traffic they have never seen.
@@ -113,7 +113,7 @@ python -m pytest tests -q
 `tests/test_welford_flow_parity.py` checks that the live detector's incremental (Welford)
 feature computation produces the same 41 features as the offline reference engine.
 The live detector keeps its own copy of the feature code, so this test is what guards
-against training/serving skew. It needs the live-console repository
+against training/serving skew. It needs the [live-console repository](https://github.com/BurakCANKURT/Live-IDS-Console)
 (`IDS_LIVE_DETECTOR`) and a real capture (`IDS_PARITY_PCAP`), and is skipped without them.
 
 ## Limitations
